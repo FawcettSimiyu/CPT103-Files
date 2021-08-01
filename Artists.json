@@ -1,0 +1,18 @@
+{
+    "AC/DC": {
+        "ArtistId": 1,
+        "ArtistName": "AC/DC"
+    },
+    "Louis Armstrong": {
+        "ArtistId": 2,
+        "ArtistName": "Louis Armstrong"
+    },
+    "Iron Maiden": {
+        "ArtistId": 3,
+        "ArtistName": "Iron Maiden"
+    },
+    "Miles Davis": {
+        "ArtistId": 4,
+        "ArtistName": "Miles Davis"
+    }
+} 
