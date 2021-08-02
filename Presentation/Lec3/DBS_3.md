@@ -43,3 +43,25 @@ CREATE TABLE Orders (
 | DOUBLE(M, D)  |                            |                           | 比FLOAT精度更高        |
 | DECIMAL(M, D) |                            |                           | 每一个数字代表一个字节 |
 
+```mysql
+ALTER TABLE contacts ADD last_name varchar(40) NOT NULL, ADD first_name varchar(35) NULL;
+
+ALTER TABLE contacts DROP COLUMN contact_type;
+
+ALTER TABLE table_name
+  CHANGE COLUMN old_name new_name 
+    column_definition;
+    
+ALTER TABLE contacts
+  CHANGE COLUMN contact_type ctype
+    varchar(20) NOT NULL;
+
+ALTER TABLE table_name
+  MODIFY column_name column_definition;
+  
+ALTER TABLE contacts
+  MODIFY last_name varchar(50) NULL;
+```
+
+
+
