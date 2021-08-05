@@ -61,6 +61,18 @@ ALTER TABLE table_name
   
 ALTER TABLE contacts
   MODIFY last_name varchar(50) NULL;
+  
+ALTER TABLE table_name
+	ADD CONSTRAINT constraint_name UNIQUE (column1, column2, ... column_n);
+    
+ALTER TABLE contacts 
+    ADD CONSTRAINT contacts_unique UNIQUE (last_name, first_name);
+    
+ALTER TABLE your_table_name 
+    DROP INDEX constraint_name | DROP FOREIGN KEY name | DROP PRIMARY KEY
+    
+ALTER TABLE contacts
+	DROP INDEX contacts_unique;
 ```
 
 
